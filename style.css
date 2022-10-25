@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.5rem 1rem;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* header - card */
+header {
+  margin-bottom: 2rem;
+  grid-column: 1/5;
+}
+
+.card {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(0, 70, 255);
+  color: white;
+}
+
+.card-wrapper {
+  padding: 1.5rem;
+}
+
+.id-status {
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: rgb(20, 153, 2);
+  padding: 0.3rem 2rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+}
+
+.register-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.activation-date {
+  font-size: 0.7rem;
+}
+
+.personal-data {
+  display: flex;
+}
+
+.profile-picture {
+  height: 120px;
+  border-radius: 15px;
+  margin-right: 1.5rem;
+}
+
+.name :first-child,
+.idade :first-child,
+.plano :first-child {
+  font-size: 0.7rem;
+}
+
+.name :last-child,
+.idade :last-child,
+.plano :last-child {
+  font-size: 1rem;
+}
+
+.name,
+.idade {
+  margin-bottom: 0.5rem;
+}
+
+/* main section - sections  */
+
+main {
+  grid-column: 1/5;
+  max-width: 100%;
+}
+
+.sections {
+  display: grid;
+  grid-column: 1/5;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 10px;
+  padding: .7rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.section img {
+  width: 24px;
+}
+
+.section * {
+  align-self: center;
+  font-size: .9rem;
+}
+
+/* advertisement section  */
+
+.indications {
+  display: flex;
+  padding: .5rem;
+  border: 1px solid lightgray;
+  border-radius: 35px;
+  margin-bottom: 2rem;
+}
+
+.indications img {
+  width: 50px;
+  margin-right: .5rem;
+}
+
+.indications-text :first-child {
+  color: rgb(0, 10, 255);
+  font-weight: 700;
+}
+
+.indications-text :last-child {
+  font-size: .9rem;
+}
+
+/* Offers section */
+
+
+
+@media screen and (min-width: 420px) {
+  body {
+    width: 390px;
+  }
+}
